@@ -1,0 +1,210 @@
+/* General Styling for the Entire Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Styling for the Main Card */
+.card {
+    width: 400px;
+    height: 600px;
+    background-color: #ccc; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Styling for the Profile Image */
+.card-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100px;
+    padding: 15px;
+    margin-left: 55px;
+    border: 5px solid rgb(162, 162, 162);
+    margin-top: 10px;
+}
+
+/* Styling for the Header Section of the Card */
+.card-header {
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styling for the Content Section of the Card */
+.card-content {
+    padding: 20px;
+}
+
+/* Styling for Buttons (Not Used in This Example) */
+.card-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    cursor: pointer;
+}
+
+/* Additional Styling for Content Paragraphs */
+.card-content p {
+    text-align: center;
+}
+
+/* Left Card Styling */
+#left-card {
+    width: 400px;
+    height: 500px;
+    background-color: #ccc; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 100px;
+}
+
+/* Styling for the Divider Line */
+#line {
+    width: 2px;
+    height: 150px;
+    background-color: black;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+/* Styling for the Left Content Section */
+#left-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+/* Additional Styling for Left Card Paragraph */
+#left-card p {
+    text-align: center;
+    font-size: small;
+    padding: 20px;
+}
+
+/* Right Card Styling */
+#right-card {
+    width: 400px;
+    height: 500px;
+    background-color: #ccc; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-left: 10px; 
+    margin-right: 150px;
+}
+
+/* Additional Styling for Social Media Links */
+#right-card #Socials ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Styling for Social Media Link Items */
+#right-card #Socials ul li {
+    text-align: center;
+    font-family: Arial, sans-serif; 
+    font-weight: normal; 
+    padding: 5px;
+    list-style: none;
+}
+
+/* Additional Styling for Social Media Links */
+#right-card #Socials li {
+    margin-top: 15px;
+}
+
+/* Additional Styling for Social Media Links Paragraph */
+#right-card #Socials p {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Font Awesome Icons Styling */
+.fa-facebook {
+    color: blue;
+    font-size: large;
+}
+
+.fa-instagram {
+    color: red;
+    font-size: large;
+}
+
+.fa-envelope {
+    color: green;
+    font-size: large;
+}
+
+.fa-github{
+    color: black;
+    font-size: large;
+}
+
+/* Media Query for Smaller Screens */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for Left and Right Cards */
+    #left-card, #right-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    /* Auto height for Left and Right Cards */
+    #left-card, #right-card {
+        height: auto;
+    }
+
+    /* Adjustments for Left Content Section */
+    #left-content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    /* Hide the Divider Line on Smaller Screens */
+    #line {
+        display: none;
+    }
+
+    /* Adjustments for Left Card Paragraph */
+    #left-card p {
+        padding: 10px;
+    }
+
+    /* Full-width for the Main Card on Smaller Screens */
+    .card {
+        width: 100%;
+    }
+
+    /* Adjustments for Profile Image on Smaller Screens */
+    .card-image img {
+        width: 150px;
+        height: 150px;
+        margin-left: 25%;
+    }
+
+    /* Adjustments for Social Media Links on Smaller Screens */
+    #right-card #Socials ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
