@@ -23,7 +23,7 @@ body {
 /* Styling for the Profile Image */
 .card-image img {
     width: 250px;
-    height: 250px;
+    height: 300px;
     border-radius: 100px;
     padding: 15px;
     margin-left: 55px;
