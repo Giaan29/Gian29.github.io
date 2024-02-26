@@ -1,80 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <!-- Link to the external stylesheet -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Link to Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: start;
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+        }
+
+        .intro-text {
+            margin-right: 30px; /* Adjusted margin for text */
+        }
+
+        .intro h1 {
+            font-size: xx-large;
+        }
+
+        .intro p {
+            font-size: larger;
+            color: rgb(56, 55, 55);
+        }
+
+        .bio {
+            margin-top: 20px;
+            margin-right: 150px;
+        }
+
+        .photo img {
+            width: 380px;
+            height: 400px;
+            border-radius: 50px;
+            border: 5px solid black;
+        }
+
+        .second {
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 800px; /* Set a max-width for the entire section */
+            margin: auto; /* Center the content */
+        }
+
+        .Education,
+        .Skills,
+        .Contact,
+        .Socials {
+            text-align: left; /* Align text to the left for better readability */
+            font-size: x-large;
+            margin-bottom: 5px;
+        }
+
+        .Education ul,
+        .Skills ul,
+        .Contact ul,
+        .Socials ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .Education li,
+        .Skills li,
+        .Contact li,
+        .Socials li {
+            margin-bottom: 5px; /* Adjust the margin to provide more space between items */
+            font-size: larger;
+            color: rgb(56, 55, 55);
+        }
+
+        .line {
+            width: 2px;
+            height: 200px;
+            background-color: black;
+            margin: 0 15px; /* Adjusted margin for better spacing */
+        }
+
+        .line2{
+            width: 2px;
+            height: 150px;
+            background-color: black;
+            margin: 0 15px; /* Adjusted margin for better spacing */
+        }
+
+        .fa-html5{
+            color: orangered;
+        }
+
+        .fa-css3-alt{
+            color: blue;
+        }
+
+        .fa-java {
+            color: red;
+        }
+
+        .fa-facebook {
+            color: blue;
+        }
+
+        .fa-instagram {
+            color: pink;
+        }
+
+        .fa-envelope {
+            color: green;
+        }
+
+        .fa-github {
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="container">
+        <section class="first">
+            <div class="intro">
+                <div class="intro-text">
+                    <p>Hello! I'm</p>
+                    <h1>Gian Jethro D. Masa</h1>
+                    <p>Future Web Developer</p>
 
-<!-- Left Card Section -->
-<div id="left-card">
-  <div id="left-content">
-    <!-- Education Section -->
-    <div id="Education">
-      <ul>
-        <h3>Education</h3>
-        <li>Magcaseville ES</li>
-        <li>Laguna College</li>
-        <li>STI College San Pablo</li>
-        <li>LSPU SPCC</li>
-      </ul>
+                    <div class="bio">
+                        <p>I am a BS Information Technology student at LSPU SPCC.</p>
+                        <p><i>"Anything is possible with God, hard work, and dedication".</i></p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="gian.jpg" alt="Image">
+                </div>
+            </div>
+        </section>
+
+        <section class="second">
+            <div class="Education">
+                <h2>Education</h2>
+                <ul>
+                    <li>Magcase ES</li>
+                    <li>Laguna College</li>
+                    <li>STI College</li>
+                    <li>LSPU SPCC</li>
+                </ul>
+            </div>
+            <div class="line"></div> <!-- Add the line here -->
+            <div class="Skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C-sharp</li>
+                    <li><i class="fab fa-java"></i>Java</li>
+                    <li><i class="fab fa-html5"></i>HTML</li>
+                    <li><i class="fab fa-css3-alt"></i>CSS</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="third">
+            <div class="Contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li><i class="fa-light fa-phone"></i>09082148485</li>
+                    <li><i class="fa-light fa-house">444,rosas st. Brgy II-B SPC</i></li>
+                </ul>
+            </div>
+            <div class="line2"></div> <!-- Add the line here -->
+            <div class="Socials">
+                <h2>Socials</h2>
+                <ul>
+                    
+                    <li><i class="fab fa-facebook"></i> Gian Jethro Masa</li>
+                    <li><i class="fab fa-instagram"></i> gianmasaa</li>
+                    <li><i class="far fa-envelope"></i> gianjethromasa@gmail.com</li>
+                    <li><i class="fab fa-github"></i> Giaan29</li>
+                </ul>
+            </div>
+        </section>
     </div>
-    <!-- Divider Line -->
-    <div id="line"></div>
-    <!-- Skills Section -->
-    <div id="Skills">
-      <ul>
-        <h3>Skills</h3>
-        <li>C#</li>
-        <li>Java</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Mysql</li>
-      </ul>
-    </div>
-  </div>
-  <!-- Additional Information Section -->
-  <p>I'm a consistent honor student in high school and senior high school (STEM). My skills include knowing the basic fundamentals of programming, and I can easily adapt to anything.</p>
-</div>
-
-<!-- Main Card Section -->
-<div class="card">
-  <div class="card-image">
-    <!-- Profile Image -->
-    <img src="gian.jpg" alt="Image">
-  </div>
-  <div class="card-header">
-    <!-- Name and Title -->
-    <h3>Gian Jethro D. Masa</h3>
-    <h4>Future Web Developer</h4>
-  </div>
-  <div class="card-content">
-    <!-- Brief Introduction -->
-    <p>I am a BS Information Technology student at LSPU SPCC.</p>
-    <p><i>"Anything is possible with God, hard work, and dedication".</i></p>
-  </div>
-</div>
-
-<!-- Right Card Section -->
-<div id="right-card">
-  <div id="Socials">
-    <ul>
-      <h3>Socials</h3>
-      <!-- Social Media Links -->
-      <li><i class="fab fa-facebook"></i> Gian Jethro Masa</li>
-      <li><i class="fab fa-instagram"></i> gianmasaa</li>
-      <li><i class="far fa-envelope"></i> gianjethromasa@gmail.com</li>
-      <li><i class="fab fa-github"></i> Giaan29</li>
-    </ul>
-    <!-- explain -->
-    <p>This is the only contact information that I want to share. I hope you understand. Thank you!</p>
-  </div>
-</div>
-
 </body>
 </html>
